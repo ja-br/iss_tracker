@@ -46,6 +46,7 @@ async function getISS() {
 document.querySelector('#lat').textContent = latitude.toFixed(4)
 document.querySelector('#lng').textContent = longitude.toFixed(4)
 document.querySelector('#alt').textContent = altitude.toFixed(1)
+setTimeout(getISS, 1500)
 
 }
 
@@ -54,4 +55,3 @@ document.querySelector('#alt').textContent = altitude.toFixed(1)
 getISS()
 
 
-setInterval(getISS, 1500)
